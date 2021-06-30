@@ -3,7 +3,7 @@
 import socket
 import time
 
-HOST = 'http://98536ff0c859.ngrok.io'
+HOST = '127.0.0.1'
 PORT = 9930
 clientMessage = 'Hello!'
 loop = 0
