@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import socket
-HOST = '127.0.0.1'
+HOST = '192.168.225.20'
 # HOST = '10.1.1.2'
 PORT = 9930
 
