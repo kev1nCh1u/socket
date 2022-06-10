@@ -7,15 +7,10 @@ import struct
 UDP_IP = "127.0.0.1"
 UDP_PORT = 8787
 
-point = np.zeros(6,np.float32) # px,py,pz,rx,ry,rz
-point[0] = 1.1
-point[1] = 2.1
-point[2] = 3.1
-point[3] = 4.1
-point[4] = 5.1
-point[5] = 6.1
+point = np.zeros(7,np.float32) # px,py,pz,rx,ry,rz,v
+point = [162.14,435.47,321.36,178.20,2.61,162.09,100]
 message = b""
-for i in range(6):
+for i in range(7):
     message += struct.pack('f', point[i])
 
 print("UDP target IP: %s" % UDP_IP)
